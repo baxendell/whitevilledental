@@ -6,13 +6,13 @@
 
         <div class="row justify-content-center align-items-center">
 
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
 
                 <a class="footer-forms">Patient Forms</a>
 
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
 
                 <ul class="social-icon-list">
 

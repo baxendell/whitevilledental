@@ -95,17 +95,21 @@ get_header();
 
 		<div class="row align-items-center justify-content-center">
 
-			<div class="entry-content col-md-11">
+			<div class="col-md-11">
 
-				<div class="col-md-6">	
+				<div class="row">
 
-					<a class="btn btn-2" href="/technology/">Technology</a>
+					<div class="col-md-6 text-center">	
 
-				</div>
+						<a class="btn btn-2" href="/technology/">Technology</a>
 
-				<div class="col-md-6">
+					</div>
 
-					<a class="btn btn-2" href="#">Blank</a>
+					<div class="col-md-6 text-center">
+
+						<a class="btn btn-2" href="#">Blank</a>
+
+					</div>
 
 				</div>
 
