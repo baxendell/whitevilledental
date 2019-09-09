@@ -41,7 +41,7 @@
             <nav id="nav-mobile" class="navbar">
 
                 <a class="navbar-brand site-logo" href="/" itemprop="url">
-                    <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/logo.svg" alt="logo">
+                    <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/whiteville-dental-logo.png" alt="logo">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,19 +65,19 @@
 
     </div>
 
-    <div class="top-header-desktop">
+    <div class="top-header-desktop d-none d-md-block">
 
-        <div class="container d-none d-md-block">
+        <div class="container">
 
             <div class="row align-items-center">
 
-                <div class="site-logo-wrap col-md-4" itemscope itemtype="http://schema.org/Organization">
+                <div class="site-logo-wrap text-center col-lg-4" itemscope itemtype="http://schema.org/Organization">
                     <a class="site-logo" href="/" itemprop="url">
                         <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/whiteville-dental-logo.png" alt="Whiteville NC Dentist">
                     </a>
                 </div>
 
-                <div class="col-md-8 offset-lg-1 col-lg-7">
+                <div class="col-lg-9 offset-xl-1 col-xl-7">
                     <nav id="nav-desktop" class="navbar navbar-expand-md d-none d-md-block">
 
                         <?php wp_nav_menu(
