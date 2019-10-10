@@ -7,7 +7,7 @@
 
     <form class="banner-form" action="//www.cw-apps.com/form-processor-noscript.php" method="post">
 
-        <div class="form-title">GET YOUR FREE CONSULTATION</div><!--.form-title-->
+        <div class="form-title">Request an Appointment</div><!--.form-title-->
 
         <fieldset>
 
@@ -24,8 +24,8 @@
 
             </div>
 
-            <div class="button-wrap">
-                <button type="submit" class="btn btn-std">Send To Our Attorneys</button>
+            <div class="button-wrap text-center">
+                <button type="submit" class="btn btn-2">Send</button>
             </div><!--.button-wrap-->
 
         </fieldset>

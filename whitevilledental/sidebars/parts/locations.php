@@ -1,36 +1,24 @@
-<?php 
-$amount = get_field('single_or_multiple_location', 'option');
 
- 
-
-?>
 
 <div class="sidebar-locations sidebar-widget">
 
-    <div class="sidebar-title"><?php the_field('location_widget_title', 'option') ?></div>
+    <div class="sidebar-title">Location</div>
 
+    <div class="contact-address" itemscope="" itemtype="http://schema.org/Dentist">
 
-    <?php if($amount == 'single'):
-            $post_object = get_field('location', 'option');
-            if( $post_object ): 
-            $post = $post_object;
-            setup_postdata( $post );
-    ?>
-    <div class="contact-address" itemscope="" itemtype="http://schema.org/Attorney">
-
-        <strong itemprop="name"><?php the_field('location_firm_name') ?></strong>
+        <strong itemprop="name">Whiteville Family & Cosmetic Dentistry</strong>
 
         <address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress"><?php the_field('location_address_1') ?> <?php if(get_field('location_address_2')){echo '<br/>'.the_field('location_address_2');} ?></span><br/>
-            <span itemprop="addressLocality"><?php the_field('location_city') ?></span>, <span itemprop="addressRegion"><?php the_field('location_state') ?></span> <span itemprop="postalCode"><?php the_field('location_zipcode') ?></span><br/>
+            <span itemprop="streetAddress">904 Spivey Rd</span><br/>
+            <span itemprop="addressLocality">Whiteville</span>, <span itemprop="addressRegion">NC</span> <span itemprop="postalCode">28472</span><br/>
         </address>
 
-        <span itemprop="telephone">Phone: <strong><?php the_field('location_phone') ?></strong></span>
+        <span itemprop="telephone">Phone: (910) 642-6500</strong></span>
         <?php if(get_field('location_fax')): ?>
         <br/><span itemprop="fax">Fax: <strong><?php the_field('location_fax') ?></strong></span><br/>
         <?php endif ?>
 
-        <a class="directions" href="<?php the_field('location_direction')?>" target="_blank">Directions</a>
+        <a class="directions" href="https://goo.gl/maps/nLJL2U6eueANfY1e8" target="_blank">Directions</a>
         <a class="office-hours" data-toggle="modal" data-target="#office-hours">Office Hours</a>
 
         <!-- Modal -->
@@ -51,58 +39,29 @@ $amount = get_field('single_or_multiple_location', 'option');
               </div>
 
               <div class="modal-body">
-                <div class="opening-hours" itemscope="" itemtype="http://schema.org/LegalService">
+                <div class="opening-hours" itemscope="" itemtype="http://schema.org/Dentist">
 
                   <table>
                     <tbody>
-                      <?php if ( get_field( 'monday_hours' ) ): ?>
                       <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
                           <td class="day">Monday</td>
-                          <td class="time"><span itemprop="openingHours"><?php the_field( 'monday_hours' ); ?></span></td>
+                          <td class="time"><span itemprop="openingHours">8:00am - 5:00pm</span></td>
                       </tr>
-                      <?php endif; ?>
 
-                      <?php if ( get_field( 'tuesday_hours' ) ): ?>
                       <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
                           <td class="day">Tuesday</td>
-                          <td class="time"><span itemprop="openingHours"><?php the_field( 'tuesday_hours' ); ?></span></td>
+                          <td class="time"><span itemprop="openingHours">8:00am - 5:00pm</span></td>
                       </tr>
-                      <?php endif; ?>
 
-                      <?php if ( get_field( 'wednesday_hours' ) ): ?>
                       <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
                           <td class="day">Wednesday</td>
-                          <td class="time"><span itemprop="openingHours"><?php the_field( 'wednesday_hours' ); ?></span></td>
+                          <td class="time"><span itemprop="openingHours">8:00am - 5:00pm</span></td>
                       </tr>
-                      <?php endif; ?>
 
-                      <?php if ( get_field( 'thursday_hours' ) ): ?>
                       <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
                           <td class="day">Thursday</td>
-                          <td class="time"><span itemprop="openingHours"><?php the_field( 'thursday_hours' ); ?></span></td>
+                          <td class="time"><span itemprop="openingHours">7:30am - 1:00pm</span></td>
                       </tr>
-                      <?php endif; ?>
-
-                      <?php if ( get_field( 'friday_hours' ) ): ?>
-                      <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                          <td class="day">Friday</td>
-                          <td class="time"><span itemprop="openingHours"><?php the_field( 'friday_hours' ); ?></span></td>
-                      </tr>
-                      <?php endif; ?>
-
-                      <?php if ( get_field( 'saturday_hours' ) ): ?>
-                      <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                          <td class="day">Saturday</td>
-                          <td class="time"><span itemprop="openingHours"><?php the_field( 'saturday_hours' ); ?></span></td>
-                      </tr>
-                      <?php endif; ?>
-
-                      <?php if ( get_field( 'sunday_hours' ) ): ?>
-                      <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                          <td class="day">Sunday</td>
-                          <td class="time"><span itemprop="openingHours"><?php the_field( 'sunday_hours' ); ?></span></td>
-                      </tr>
-                      <?php endif; ?>
 
                     </tbody>
                   </table>
@@ -121,14 +80,12 @@ $amount = get_field('single_or_multiple_location', 'option');
 
     <div class="contact-map">
 
-        <a href="<?php the_field('location_direction')?>" target="_blank">
+        <a href="https://goo.gl/maps/nLJL2U6eueANfY1e8" target="_blank">
 
             <img src="<?php the_field('location_map') ?>" alt="<?php the_field('location_firm_name') ?> location"/>
 
         </a>
 
     </div>
-
-    <?php endif; wp_reset_postdata(); endif; ?>
 
 </div>

@@ -1,4 +1,13 @@
-<?php if( have_rows('service', 41) ): ?>
+<?php if( have_rows('service', 41) ): 
+
+$pagename = get_query_var('pagename');  
+if ( !$pagename && $id > 0 ) {  
+    // If a static page is set as the front page, $pagename will not be set. Retrieve it from the queried object  
+    $post = $wp_query->get_queried_object();  
+    $pagename = $post->post_name;  
+}
+
+?>
 
 <section class="services">
 
@@ -6,7 +15,7 @@
 
 		<div class="row align-items-center justify-content-center">
 
-			<div class="col-lg-10 col-xl-8 text-center entry-content">
+			<div class="col text-center entry-content">
 
 				<div class="section-title">Our Services</div>
 
@@ -22,9 +31,9 @@
 							setup_postdata( $post );
 					?>
 
-					<div class="col-6 col-md-3">
+					<div class="col">
 
-						<a class="services-item" href="<?php the_permalink(); ?>">
+						<a class="services-item <?php if ($pagename == $post->post_name) echo 'active'; ?>" href="<?php the_permalink(); ?>">
 
 							<img src="<?php echo $img['url']?>" alt="<?php echo $img['alt']?>"/>
 

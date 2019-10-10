@@ -1085,12 +1085,12 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 
 	acf_add_local_field_group( array(
 		'key'                   => 'group_5744322e0306c',
-		'title'                 => 'Award Extras',
+		'title'                 => 'Insurance Extras',
 		'fields'                => array(
 			array(
 				'key'               => 'field_57b1e1486d39b',
-				'label'             => 'Award Link',
-				'name'              => 'award_link',
+				'label'             => 'Insurance Link',
+				'name'              => 'insurance_link',
 				'type'              => 'url',
 				'instructions'      => '',
 				'required'          => 0,
@@ -1130,7 +1130,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ):
 				array(
 					'param'    => 'post_type',
 					'operator' => '==',
-					'value'    => 'awards',
+					'value'    => 'insurances',
 				),
 			),
 		),

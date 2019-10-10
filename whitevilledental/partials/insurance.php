@@ -1,10 +1,8 @@
 <?php
 
 $awards_args = array(
-	'post_type'      => 'awards',
+	'post_type'      => 'insurances',
 	'posts_per_page' => - 1,
-	'orderby'        => 'menu_order',
-	'order'          => 'ASC',
 );
 
 $awards_query = new WP_Query( $awards_args );
@@ -15,7 +13,7 @@ if ( $awards_query->have_posts() ) : ?>
 
         <div class="container">
 
-            <div class="section-title">Awards & Memberships</div>
+            <div class="section-title">We Accept:</div>
 
             <div class="row">
 

@@ -41,7 +41,7 @@
             <nav id="nav-mobile" class="navbar">
 
                 <a class="navbar-brand site-logo" href="/" itemprop="url">
-                    <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/whiteville-dental-logo.png" alt="logo">
+                    <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/whiteville-dental-logo.svg" alt="logo">
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,7 +73,7 @@
 
                 <div class="site-logo-wrap text-center col-lg-4" itemscope itemtype="http://schema.org/Organization">
                     <a class="site-logo" href="/" itemprop="url">
-                        <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/whiteville-dental-logo.png" alt="Whiteville NC Dentist">
+                        <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/whiteville-dental-logo.svg" alt="Whiteville NC Dentist">
                     </a>
                 </div>
 
@@ -108,7 +108,9 @@
 
     </div>
 
-    <?php get_template_part('partials/hero') ?>
+    <?php if(!is_page_template('contact.php')){
+        get_template_part('partials/hero');
+        }  ?>
 
 </div>
 

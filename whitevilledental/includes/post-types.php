@@ -2,24 +2,24 @@
 /**
  * Custom Post Type: Awards
  */
-/*
-function awards_post_type() {
+
+function insurances_post_type() {
 
 	$labels = array(
-		'name'                  => _x( 'Awards', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Award', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Awards', 'text_domain' ),
-		'name_admin_bar'        => __( 'Award', 'text_domain' ),
+		'name'                  => _x( 'Insurances', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Insurance', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Insurances', 'text_domain' ),
+		'name_admin_bar'        => __( 'Insurance', 'text_domain' ),
 		'archives'              => __( '', 'text_domain' ),
 		'parent_item_colon'     => __( '', 'text_domain' ),
-		'all_items'             => __( 'All Awards', 'text_domain' ),
-		'add_new_item'          => __( 'Add New Award', 'text_domain' ),
+		'all_items'             => __( 'All Insurances', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Insurance', 'text_domain' ),
 		'add_new'               => __( 'Add New', 'text_domain' ),
-		'new_item'              => __( 'New Award', 'text_domain' ),
-		'edit_item'             => __( 'Edit Award', 'text_domain' ),
-		'update_item'           => __( 'Update Award', 'text_domain' ),
-		'view_item'             => __( 'View Award', 'text_domain' ),
-		'search_items'          => __( 'Search Awards', 'text_domain' ),
+		'new_item'              => __( 'New Insurance', 'text_domain' ),
+		'edit_item'             => __( 'Edit Insurance', 'text_domain' ),
+		'update_item'           => __( 'Update Insurance', 'text_domain' ),
+		'view_item'             => __( 'View Insurance', 'text_domain' ),
+		'search_items'          => __( 'Search Insurances', 'text_domain' ),
 		'not_found'             => __( 'Not found', 'text_domain' ),
 		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
 		'featured_image'        => __( 'Featured Image', 'text_domain' ),
@@ -33,7 +33,7 @@ function awards_post_type() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args   = array(
-		'label'               => __( 'Acknowledgement', 'text_domain' ),
+		'label'               => __( 'Insurances', 'text_domain' ),
 		'description'         => __( 'Post Type Description', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'thumbnail', 'revisions', 'page-attributes' ),
@@ -51,12 +51,12 @@ function awards_post_type() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'awards', $args );
+	register_post_type( 'insurances', $args );
 
 }
 
-add_action( 'init', 'awards_post_type', 0 );
-*/
+add_action( 'init', 'insurances_post_type', 0 );
+
 // Register Custom Taxonomy
 function testimonial_taxonomy() {
 

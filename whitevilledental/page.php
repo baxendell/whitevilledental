@@ -44,6 +44,16 @@ get_header();
 
 <?php endif ?>
 
+<?php if(is_page('ways-to-pay')){
+	get_template_part('partials/insurance');
+}
+?>
+
 <?php get_template_part( 'partials/services' ); ?>
+
+<?php if(is_page('services')){
+	get_template_part('partials/insurance');
+}
+?>
 
 <?php get_footer(); ?>
