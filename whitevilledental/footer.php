@@ -8,7 +8,7 @@
 
             <div class="col-lg-4 text-center">
 
-                <a class="footer-forms">Patient Forms</a>
+                <a href="https://patientviewer.com/WebFormsGWT/GWT/WebForms/WebForms.html?DOID=43509&WSDID=34489&NFID=34490&NFID=34491 " class="footer-forms">Patient Forms</a>
 
             </div>
 
@@ -88,6 +88,8 @@
                     </div>
 
                 </div>
+
+                <a class="privacy" href="/notice-of-privacy-practices/">Privacy Policy</a>
 
             </div>
 

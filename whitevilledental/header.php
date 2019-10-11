@@ -71,13 +71,13 @@
 
             <div class="row align-items-center">
 
-                <div class="site-logo-wrap text-center col-lg-4" itemscope itemtype="http://schema.org/Organization">
+                <div class="site-logo-wrap text-center col-lg-3" itemscope itemtype="http://schema.org/Organization">
                     <a class="site-logo" href="/" itemprop="url">
                         <img itemprop="logo" class="logo img-fluid" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/assets/images/whiteville-dental-logo.svg" alt="Whiteville NC Dentist">
                     </a>
                 </div>
 
-                <div class="col-lg-9 offset-xl-1 col-xl-7">
+                <div class="col-lg-9 offset-xl-1 col-xl-8">
                     <nav id="nav-desktop" class="navbar navbar-expand-md d-none d-md-block">
 
                         <?php wp_nav_menu(
@@ -96,7 +96,7 @@
 
                         <a class="btn btn-1" href="/request-an-appointment/">Request an Appointment</a>
 
-                        <a class="btn btn-1" href="tel:9103272248">Call: (910) 327-2248</a>
+                        <a class="btn btn-1" href="tel:9103272248">Call: (910) 642-6500</a>
 
                     </div>
 

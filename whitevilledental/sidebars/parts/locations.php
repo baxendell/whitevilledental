@@ -82,7 +82,7 @@
 
         <a href="https://goo.gl/maps/nLJL2U6eueANfY1e8" target="_blank">
 
-            <img src="<?php the_field('location_map') ?>" alt="<?php the_field('location_firm_name') ?> location"/>
+            <img src="/wp-content/uploads/2019/10/google-map.jpg" alt="whiteville dental location"/>
 
         </a>
 

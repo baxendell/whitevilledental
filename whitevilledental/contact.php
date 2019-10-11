@@ -88,55 +88,18 @@ $formatted_number = preg_replace( '/(\W*)/', '', $number );;
 
             <div class="row justify-content-center">
 
-                <div class="col-xs-12 col-xl-8 px-lg-5">
+                <div class="col-xs-12 col-xl-8">
 					<?php get_template_part( 'partials/form' ) ?>
                 </div>
 
-            </div>
+                <div class="col-item col-lg-4 mt-5">
 
-            <div class="row contact-sidebar">
-
-                <div class="col-item col-lg-4">
-
-					<?php get_template_part( 'sidebars/parts/locations' ) ?>
-
-                </div>
-
-                <div class="col-item col-lg-4">
-
-					<?php get_template_part( 'sidebars/parts/meet-team' ) ?>
-
-                </div>
-
-                <div class="col-item col-lg-4">
-
-                    <div class="sidebar-widget sidebar-expect sidebar-widget__alt">
-
-                        <div class="sidebar-title">What to Expect</div>
-
-                        <div class="sidebar-expect-sect">
-
-                            <p>We strive to respond within the hour. Expect a phone call from our staff within 24 hours to set up your initial consultation where we will discuss how we can help you.</p>
-
-                        </div>
-
-                        <div class="sidebar-expect-sect">
-
-							<?php include( 'assets/images/icons/stars-row.svg' ) ?>
-
-                            <a class="arrow-link arrow-link__alt">View Our Reviews</a>
-
-                        </div>
-
-                        <div class="sidebar-subtitle">Your Privacy</div>
-
-                        <p>All of the information you provide will be kept strictly confidential.</p>
-
-                    </div>
+                    <?php get_template_part( 'sidebars/parts/locations' ) ?>
 
                 </div>
 
             </div>
+
 
         </div>
 
