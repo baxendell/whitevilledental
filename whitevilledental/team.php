@@ -6,6 +6,8 @@ get_header();
 
 $args = array(
 	'post_type' => 'staff',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
     'posts_per_page' => -1
 );
 
@@ -18,7 +20,7 @@ $staff = new WP_Query( $args );
 
         <div class="row align-items-center justify-content-center">
 
-            <div class="col-md-10 col-lg-8 col-xl-6">
+            <div class="col-xl-10">
 
             <?php if ( have_posts() ) : ?>
 
@@ -63,11 +65,13 @@ $staff = new WP_Query( $args );
 
                 </div>
 
-                <?php endif; the_content() ?>
+                <?php endif ?>
+
+                <?php the_content() ?>
 
             </div>
 
-            <?php endwhile; wp_reset_post_data(); ?>
+            <?php endwhile; wp_reset_postdata(); ?>
 
         </div>
 

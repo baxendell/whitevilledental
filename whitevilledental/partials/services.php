@@ -31,9 +31,9 @@ if ( !$pagename && $id > 0 ) {
 							setup_postdata( $post );
 					?>
 
-					<div class="col">
+					<div class="col-md-2">
 
-						<a class="services-item <?php if ($pagename == $post->post_name) echo 'active'; ?>" href="<?php the_permalink(); ?>">
+						<a class="services-item <?php if ($pagename == $post->post_name) echo 'active'; ?> service-<?php echo $post->post_name ?>" href="<?php the_permalink(); ?>">
 
 							<img src="<?php echo $img['url']?>" alt="<?php echo $img['alt']?>"/>
 

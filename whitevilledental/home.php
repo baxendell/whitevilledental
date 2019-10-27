@@ -10,7 +10,7 @@ get_header() ?>
 
             <div class="row">
 
-                <div class="content col-12 col-lg-7 col-xl-8">
+                <div class="content col-12 col-lg-7 col-xl-8 entry-content">
 
                     <h1 class="page-title">Blog</h1>
 

@@ -27,7 +27,7 @@ $formatted_number = preg_replace( '/(\W*)/', '', $number );;
 
                         <div class="col-sm-5">
 
-                            <ul class="social-icon-list justify-content-between">
+                            <ul class="social-icon-list justify-content-center">
 
 								<?php if ( get_field( 'linkedin_link', 'option' ) ): ?>
                                     <li>

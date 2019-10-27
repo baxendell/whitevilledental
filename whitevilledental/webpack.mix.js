@@ -25,7 +25,6 @@ mix.scripts(
         './assets/js/vendors/enquire.min.js',
         './assets/js/vendors/jquery.smooth-scroll.js',
         './assets/js/vendors/jquery.matchHeight-min.js',
-        './assets/js/vendors/jquery.magnific-popup.min.js',
         './assets/js/vendors/slick.js',
         './assets/js/vendors/jquery.waypoints.js',
         './assets/js/vendors/sticky.js',

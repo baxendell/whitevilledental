@@ -13,7 +13,7 @@ get_header();
 
         <div class="row align-items-center justify-content-center">
 
-        	<div class="col-md-10 col-lg-8 col-xl-6">
+        	<div class="col-xl-10">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -41,7 +41,7 @@ get_header();
 
 <?php get_template_part('partials/services') ?>
 
-<section class="main-content">
+<section class="main-content cta-tri">
 
 	<div class="container">
 
@@ -51,15 +51,90 @@ get_header();
 
 				<div class="row">
 
-					<div class="col-md-6 text-center">	
+					<div class="col-md-4 text-center">	
 
-						<a class="btn btn-2" href="/technology/">Technology</a>
+						<div class="cta-box">
+
+							<div class="cta-box-title">
+
+								<?php the_field('left_box_title') ?>
+
+							</div>
+
+							<div class="cta-box-content">
+
+								<?php the_field('left_box_content') ?>
+
+							</div>
+
+						</div>
 
 					</div>
 
-					<div class="col-md-6 text-center">
+					<div class="col-md-4 text-center">
 
-						<a class="btn btn-2" href="#">Blank</a>
+						<div class="cta-box">
+
+							<div class="cta-box-title">
+
+								<?php the_field('testimonial_section_title') ?>
+
+							</div>
+
+							<div class="cta-box-content">
+
+								<?php $post_objects = get_field('testimonials');
+
+									if( $post_objects ):
+
+								?>
+
+			                    <div class="testimonials-section-slider">
+
+			                        <?php foreach( $post_objects as $post): setup_postdata($post); ?>
+
+			                        <div class="testimonials-section-item">
+
+			                           <?php the_excerpt() ?>
+
+			                            <cite><?php the_title() ?></cite>
+
+			                        </div>
+
+			                        <?php endforeach; ?>
+
+			                    </div>
+
+			                    <div class="custom-nav-test sameHeight"></div>
+
+			                    <!--<a class="arrow-link" href="/testimionials/">See More Testimonials</a>-->
+
+			                 	<?php wp_reset_postdata(); endif; ?>
+
+		                    </div>
+
+						</div>
+
+					</div>
+
+
+					<div class="col-md-4 text-center">
+
+						<div class="cta-box">
+
+							<div class="cta-box-title">
+
+								<?php the_field('right_bottom_title') ?>
+
+							</div>
+
+							<div class="cta-box-content">
+
+								<?php the_field('right_bottom_content') ?>
+
+							</div>
+
+						</div>
 
 					</div>
 

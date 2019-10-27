@@ -16,7 +16,7 @@ get_header();
 
         <div class="row align-items-center justify-content-center">
 
-        	<div class="col-md-10 col-lg-8 col-xl-6">
+        	<div class="col-xl-10">
 
 			<?php if ( have_posts() ) : ?>
 

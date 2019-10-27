@@ -8,7 +8,7 @@
 
             <div class="col-lg-4 text-center">
 
-                <a href="https://patientviewer.com/WebFormsGWT/GWT/WebForms/WebForms.html?DOID=43509&WSDID=34489&NFID=34490&NFID=34491 " class="footer-forms">Patient Forms</a>
+                <a href="https://patientviewer.com/WebFormsGWT/GWT/WebForms/WebForms.html?DOID=43509&WSDID=34489&NFID=34490&NFID=34491&ReturnURL=https%3awhitevilledentist.com" class="footer-forms">Patient Forms</a>
 
             </div>
 
@@ -79,10 +79,10 @@
                         <div class="client-name" itemprop="name">Whiteville Family & Cosmetic Dentistry</div>
 
                         <div class="address">
-                            <p itemprop="streetAddress">904 Spivey Rd</p>
-                            <p><span itemprop="addressLocality">Whiteville</span>, <span itemprop="addressRegion">NC</span> <span itemprop="postalCode">28472</span>
-                            </p>
-                            <p class="phone" itemprop="telephone">(910) 642-6500</p>
+                            <p itemprop="streetAddress">904 Spivey Rd<br/>
+                            <span itemprop="addressLocality">Whiteville</span>, <span itemprop="addressRegion">NC</span> <span itemprop="postalCode">28472</span>
+                            <br/>
+                            <span class="phone" itemprop="telephone">(910) 642-6500</span></p>
                         </div>
 
                     </div>

@@ -10,7 +10,7 @@
 
         <div class="row">
 
-            <div class="content col-12 col-lg-7 col-xl-8">
+            <div class="content col-12">
 
                 <h1 class="page-title"><?php h1_title() ?></h1>
 
@@ -30,7 +30,7 @@
 
 					<?php
 					$team_args = array(
-						'post_type'      => 'attorney',
+						'post_type'      => 'staff',
 						'posts_per_page' => - 1,
 					);
 
@@ -46,10 +46,6 @@
 
                 </div>
 
-            </div>
-
-            <div class="col-12 col-lg-5 col-xl-4 sidebar">
-				<?php get_template_part( 'sidebars/generic-sidebar' ) ?>
             </div>
 
         </div>

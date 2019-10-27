@@ -17,6 +17,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124889900-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124889900-3');
+    </script>
+
+
     <?php wp_head(); ?>
 
 	<?php
@@ -27,12 +38,18 @@
 	?>
     <!-- Google Tag Manager -->
 
+    <?php if(is_home() || is_single() || is_archive()) {
+        $banner_image = get_field('banner_image', 267);
+    } else {
+        $banner_image = get_field('banner_image');
+    }
+    ?>
 </head>
 <body id="top-page" <?php body_class( $classes ) ?>>
 <a href="#main-wrapper" class="skiplink" tabindex="-1">Skip Navigation</a>
 <!-- Google Tag Manager (noscript) -->
 
-<div class="header" style="background-image: url('<?php the_field('banner_image')?>')">
+<div class="header" style="background-image: url('<?php echo $banner_image;?>')">
 
     <div class="top-header-mobile d-block d-md-none">
 
@@ -65,7 +82,7 @@
 
     </div>
 
-    <div class="top-header-desktop d-none d-md-block">
+    <div class="top-header-desktop d-none d-md-block fixed-top">
 
         <div class="container">
 
@@ -78,6 +95,15 @@
                 </div>
 
                 <div class="col-lg-9 offset-xl-1 col-xl-8">
+
+                    <div class="banner-buttons text-right">
+
+                        <a class="btn btn-1" href="/contact/">Request an Appointment</a>
+
+                        <a class="btn btn-1" href="tel:9103272248">Call: (910) 642-6500</a>
+
+                    </div>
+                
                     <nav id="nav-desktop" class="navbar navbar-expand-md d-none d-md-block">
 
                         <?php wp_nav_menu(
@@ -91,14 +117,6 @@
                         ) ?>
 
                     </nav>
-
-                    <div class="banner-buttons text-center">
-
-                        <a class="btn btn-1" href="/request-an-appointment/">Request an Appointment</a>
-
-                        <a class="btn btn-1" href="tel:9103272248">Call: (910) 642-6500</a>
-
-                    </div>
 
                 </div>
 
