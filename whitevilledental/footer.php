@@ -8,7 +8,7 @@
 
             <div class="col-lg-4 text-center">
 
-                <a href="https://patientviewer.com/WebFormsGWT/GWT/WebForms/WebForms.html?DOID=43509&WSDID=34489&NFID=34490&NFID=34491&ReturnURL=https%3awhitevilledentist.com" class="footer-forms">Patient Forms</a>
+                <a href="https://patientviewer.com/WebFormsGWT/GWT/WebForms/WebForms.html?DOID=43509&WSDID=34489&NFID=34490&NFID=34491&ReturnURL=https%3a%2f%2whitevilledentist.com" class="footer-forms">Patient Forms</a>
 
             </div>
 
