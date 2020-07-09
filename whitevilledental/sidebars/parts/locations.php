@@ -41,7 +41,7 @@
               <div class="modal-body">
                 <div class="opening-hours" itemscope="" itemtype="http://schema.org/Dentist">
 
-                  <table>
+                  <table itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
                     <tbody>
                       <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
                           <td class="day">Monday</td>
@@ -60,12 +60,17 @@
 
                       <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
                           <td class="day">Thursday</td>
-                          <td class="time"><span itemprop="openingHours">7:30am - 1:00pm</span></td>
+                          <td class="time"><span itemprop="openingHours">8:00am - 5:00pm</span></td>
                       </tr>
+
+                      <tr itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
+                          <td class="day">Friday</td>
+                          <td class="time"><span itemprop="openingHours">7:30am - 3:00pm</span></td>
+                      </tr>                      
 
                     </tbody>
                   </table>
-
+            
                 </div>  
                             
               </div>
